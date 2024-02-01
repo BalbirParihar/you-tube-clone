@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  font-size: 12px;
+}
+
+.container {
+  display: flex;
+}
+
+/* sidebar css start */
+
+aside {
+  padding: 10px;
+
+  text-align: center;
+}
+
+.bars {
+  margin-block: 10px 25px;
+}
+.sidebar_icons {
+  margin-bottom: 20px;
+}
+.sidebar_icons img {
+  width: 30px;
+}
+.sidebar_icons p {
+  font-size: 0.9rem;
+}
+
+/* navbar css start */
+
+.main_container {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.nav_logo img {
+  width: 150px;
+}
+
+.search_bar {
+  display: flex;
+}
+.search_bar .search_box {
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.search_bar input {
+  padding: 10px 15px;
+  width: 600px;
+  border: none;
+}
+.search_box button {
+  border: none;
+  padding: 10px;
+}
+
+.search_mic {
+  width: 50px;
+
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-left: 10px;
+  background-color: #eee9e9fb;
+}
+
+.navbar_icons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-right: 10px;
+}
+hr {
+  color: #bb0101fb;
+}
+
+/* tag_bar */
+.tag_bar {
+  padding: 10px;
+}
+.tags {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+.tag {
+  border: 1px solid #ccc;
+  background-color: #eee9e9fb;
+  border-radius: 30px;
+  padding: 5px 15px;
+  font-size: 1.2rem;
+}
+.dark {
+  background-color: #000;
+  color: white;
+}
+
+/* card css */
+.card_container {
+  background-color: #eee9e9fb;
+  padding: 20px;
+  display: grid;
+ 
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.card {
+  max-width: 320px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  /* padding:10px; */
+  margin: 10px auto;
+
+  border-radius: 7px;
+  overflow: hidden;
+}
+.card_img img {
+  width: 100%;
+}
+.card_content {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+.status {
+  display: flex;
+  gap: 10px;
+}
+.card_text {
+  padding-inline: 5px;
+}
+.card_text h2 {
+  font-size: 1.6rem;
+}
+.card_text h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
